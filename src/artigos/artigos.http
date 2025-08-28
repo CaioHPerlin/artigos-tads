@@ -1,0 +1,28 @@
+### create
+POST http://localhost:3000/artigos
+Content-Type: application/json
+
+{
+	"titulo": "Go",
+	"descricao": "Como Go está transformando o desenvolvimento backend.",
+	"autor": "Daniel Daniel",
+	"paginas": 7
+}
+
+### find all
+GET http://localhost:3000/artigos
+
+### find by id
+GET http://localhost:3000/artigos/1
+
+### update/patch
+PATCH http://localhost:3000/artigos/1
+Content-Type: application/json
+
+{
+	"titulo": "Go atualizado",
+	"paginas": 8
+}
+
+### delete
+DELETE http://localhost:3000/artigos/1

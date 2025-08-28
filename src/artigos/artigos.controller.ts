@@ -8,7 +8,7 @@ import {
   Delete,
   ParseIntPipe,
 } from '@nestjs/common';
-import { ArtigosService } from '../artigos.service';
+import { ArtigosService } from './artigos.service';
 import { CreateArtigoDto } from './dto/artigos.dto';
 import { UpdateArtigoDto } from './dto/update-artigos.dto';
 
