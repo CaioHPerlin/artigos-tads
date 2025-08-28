@@ -1,0 +1,28 @@
+### create
+POST http://localhost:3000/disciplinas
+Content-Type: application/json
+
+{
+  "nome": "Brutal",
+  "cargaHoraria": 20,
+  "semestre": 2,
+  "curso": "ADS"
+}
+
+### find all
+GET http://localhost:3000/disciplinas
+
+### find by id
+GET http://localhost:3000/disciplinas/1
+
+### update/patch
+PATCH http://localhost:3000/disciplinas/1
+Content-Type: application/json
+
+{
+	"nome": "Brutal atualizado",
+	"curso": "Super ADS"
+}
+
+### delete
+DELETE http://localhost:3000/disciplinas/1
